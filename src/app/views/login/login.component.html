@@ -1,0 +1,28 @@
+<body>
+  <div class="login-container text-center" card>
+    <div class="login-container">
+      <p-card>
+        <div class="p-grid">
+          <div class="p-col-12">
+            <div class="p-col-12 text-center" >
+              <i class="fa-brands fa-critical-role fa-5x"></i>
+              <h2 class="fontText">
+                Autenticação Clínica
+              </h2>
+            </div>
+            <label for=""> Usuário:</label>
+            <input class="p-col-12" type="text" pInputText [(ngModel)]="usuario" name="usuario"  />
+          </div>
+          <div class="p-col-12">
+            <label for="">Senha:</label>
+            <input class="p-col-12" type="password"  pInputText [(ngModel)]="senha" name="senha"  />
+          </div>
+          <div class="p-col-12">
+            <button pButton type="button" label="Entrar" class="p-col-12" (click)="fazerLogin()" ></button>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+
+</body>
